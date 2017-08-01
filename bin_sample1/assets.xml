@@ -1,0 +1,133 @@
+<xml>
+	<bitmap smooth="true" snap="always"/>
+	<lock_instance/>
+	
+	<vars>
+		<var>
+			<id>#SPRITE_LIMIT#</id>
+			<value>Left,Right,Top,Bot</value>
+		</var>
+		
+		<!--<var>
+			<id>#SPRITE_BMP#</id>
+			<value>1..23</value>
+		</var>
+		
+		<var>
+			<id>#SPRITE_WALL#</id>
+			<value>_mur1,_mur2</value>
+		</var>
+		
+		<var>
+			<id>#SPRITE_DECOR#</id>
+			<value>1..13</value>
+		</var>
+		
+		<var>
+			<id>#SPRITE_DECOR_FRONT#</id>
+			<value>1..12</value>
+		</var>-->
+	</vars>
+	
+	<groups>
+		<group>
+			<id>mini</id>
+			
+			<assets>
+				<asset>
+					<id>screen_splash</id>
+					<file><name>splash.png</name></file>
+					<instance>0</instance>
+				</asset>
+			</assets>
+		</group>
+		
+		<group>
+			<id>lvld</id>
+			
+			<vecto/>
+			<instance>0</instance>
+			
+			<assets>
+				<asset>
+					<id>lvld0</id>
+					<export>lvld0</export>
+				</asset>
+			</assets>
+		</group>
+		
+		<group>
+			<id>game</id>
+			
+			<groups>
+				<group>
+					<id>sprite</id>
+					
+					<vecto parse_mode="in-depth" ignoreParseBmp="true" />
+					<unlock_instance/>
+					
+					<assets>
+						<asset>
+							<id>sprite_limit#SPRITE_LIMIT#</id>
+							<export>sprite_limit#SPRITE_LIMIT#</export>
+							<vecto/>
+							<datas>
+								<data>
+									<id>spClass</id>
+									<value>net.cyclo.mysprite.MySpLimit#SPRITE_LIMIT#</value>
+								</data>
+							</datas>
+						</asset>
+						
+						<!--<asset>
+							<id>sprite_decor#SPRITE_DECOR#</id>
+							<export>sprite_decor#SPRITE_DECOR#</export>
+							<datas>
+								<data>
+									<id>spClass</id>
+									<value>net.cyclo.mysprite.MySpDecor</value>
+								</data>
+							</datas>
+						</asset>
+						
+						<asset>
+							<id>sprite_wall#SPRITE_WALL#</id>
+							<export>sprite_wall#SPRITE_WALL#</export>
+							<datas>
+								<data>
+									<id>spClass</id>
+									<value>net.cyclo.mysprite.MySpWall</value>
+								</data>
+							</datas>
+						</asset>
+						
+						<asset>
+							<id>sprite_decor_front#SPRITE_DECOR_FRONT#</id>
+							<export>sprite_decor_front#SPRITE_DECOR_FRONT#</export>
+							<datas>
+								<data>
+									<id>spClass</id>
+									<value>net.cyclo.mysprite.MySpDecorFront</value>
+								</data>
+							</datas>
+						</asset>-->
+					</assets>
+				</group>
+				
+				<group>
+					<id>sprite_bmp</id>
+					
+					<bitmap smooth="true" snap="never"/>
+					<unlock_instance/>
+					
+					<assets>
+						<!--<asset>
+							<id>sprite_bmp#SPRITE_BMP#</id>
+							<export>sprite_bmp#SPRITE_BMP#</export>
+						</asset>-->
+					</assets>
+				</group>
+			</groups>
+		</group>
+	</groups>
+</xml>

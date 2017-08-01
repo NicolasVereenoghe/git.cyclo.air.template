@@ -1,0 +1,393 @@
+<xml>
+	<bitmap smooth="true" snap="always"/>
+	<lock_instance/>
+	
+	<vars>
+		<var>
+			<id>#LVLD#</id>
+			<value>0..4</value>
+		</var>
+		
+		<var>
+			<id>#SPRITE_LIMIT#</id>
+			<value>Left,Right,Top,Bot</value>
+		</var>
+		
+		<var>
+			<id>#SCREEN_TC#</id>
+			<value>0..4</value>
+		</var>
+		
+		<var>
+			<id>#SPRITE_BMP#</id>
+			<value>0,1</value>
+		</var>
+		
+		<!--
+		<var>
+			<id>#SPRITE_WALL#</id>
+			<value>_mur1,_mur2</value>
+		</var>
+		
+		<var>
+			<id>#SPRITE_DECOR#</id>
+			<value>1..13</value>
+		</var>
+		
+		<var>
+			<id>#SPRITE_DECOR_FRONT#</id>
+			<value>1..12</value>
+		</var>-->
+	</vars>
+	
+	<groups>
+		<group>
+			<id>mini</id>
+			
+			<instance>0</instance>
+			
+			<assets>
+				<asset>
+					<id>screen_splash</id>
+					<file><name>splash.png</name></file>
+					<instance>0</instance>
+				</asset>
+			</assets>
+		</group>
+		
+		<group>
+			<id>preloading</id>
+			
+			<instance>0</instance>
+			
+			<assets>
+				<asset>
+					<id>screen_loading</id>
+					<export>screen_loading</export>
+					<vecto parse_mode="in-depth" ignoreParseBmp="true" />
+				</asset>
+			</assets>
+		</group>
+		
+		<group>
+			<id>lvld</id>
+			
+			<vecto/>
+			<instance>0</instance>
+			
+			<assets>
+				<asset>
+					<id>lvld#LVLD#</id>
+					<export>lvld#LVLD#</export>
+				</asset>
+			</assets>
+		</group>
+		
+		<group>
+			<id>shared</id>
+			
+			<assets></assets>
+		</group>
+		
+		<group>
+			<id>tc</id>
+			
+			<instance>0</instance>
+			
+			<assets>
+				<asset>
+					<id>screen_tc#SCREEN_TC#</id>
+					<export>screen_tc#SCREEN_TC#</export>
+					<vecto parse_mode="in-depth" ignoreParseBmp="true" />
+				</asset>
+				
+				<asset>
+					<id>screen_tc_bg_bmp</id>
+					<export>screen_tc_bg_bmp</export>
+				</asset>
+				
+				<asset>
+					<id>screen_tc_rotContent_bg_bmp</id>
+					<export>screen_tc_rotContent_bg_bmp</export>
+				</asset>
+				
+				<asset>
+					<id>screen_tc_btPlay_up_bmp</id>
+					<export>screen_tc_btPlay_up_bmp</export>
+				</asset>
+				
+				<asset>
+					<id>nav_back_bg_bmp</id>
+					<export>nav_back_bg_bmp</export>
+				</asset>
+				
+				<asset>
+					<id>nav_back_up_bmp</id>
+					<export>nav_back_up_bmp</export>
+				</asset>
+				
+				<asset>
+					<id>nav_back_over_bmp</id>
+					<export>nav_back_over_bmp</export>
+				</asset>
+			</assets>
+		</group>
+		
+		<group>
+			<id>gui</id>
+			
+			<instance>0</instance>
+			
+			<assets>
+				<asset>
+					<id>screen_title</id>
+					<export>screen_title</export>
+					<vecto parse_mode="in-depth" ignoreParseBmp="true" />
+				</asset>
+				
+				<asset>
+					<id>screen_title_bg_bmp</id>
+					<export>screen_title_bg_bmp</export>
+				</asset>
+				
+				<asset>
+					<id>screen_title_rotContent_bg_bmp</id>
+					<export>screen_title_rotContent_bg_bmp</export>
+				</asset>
+				
+				<asset>
+					<id>screen_title_btStart_up_bmp</id>
+					<export>screen_title_btStart_up_bmp</export>
+				</asset>
+				
+				<asset>
+					<id>screen_select</id>
+					<export>screen_select</export>
+					<vecto parse_mode="in-depth" ignoreParseBmp="true" />
+				</asset>
+				
+				<asset>
+					<id>screen_select_bg_bmp</id>
+					<export>screen_select_bg_bmp</export>
+				</asset>
+				
+				<asset>
+					<id>vscroll_bg_bmp</id>
+					<export>vscroll_bg_bmp</export>
+				</asset>
+				
+				<asset>
+					<id>vscroll_top_bmp</id>
+					<export>vscroll_top_bmp</export>
+				</asset>
+			</assets>
+		</group>
+		
+		<group>
+			<id>game</id>
+			
+			<groups>
+				<group>
+					<id>sprite</id>
+					
+					<vecto parse_mode="in-depth" ignoreParseBmp="true" />
+					<unlock_instance/>
+					
+					<assets>
+						<asset>
+							<id>sprite_limit#SPRITE_LIMIT#</id>
+							<export>sprite_limit#SPRITE_LIMIT#</export>
+							<vecto/>
+							<datas>
+								<data>
+									<id>spClass</id>
+									<value>net.cyclo.mysprite.MySpLimit#SPRITE_LIMIT#</value>
+								</data>
+							</datas>
+						</asset>
+						
+						<asset>
+							<id>sprite_skewBoxFront</id>
+							<export>sprite_skewBoxFront</export>
+							<datas>
+								<data>
+									<id>spClass</id>
+									<value>net.cyclo.mysprite.MySpSkewFrontBox</value>
+								</data>
+							</datas>
+						</asset>
+						
+						<!--<asset>
+							<id>sprite_decor#SPRITE_DECOR#</id>
+							<export>sprite_decor#SPRITE_DECOR#</export>
+							<datas>
+								<data>
+									<id>spClass</id>
+									<value>net.cyclo.mysprite.MySpDecor</value>
+								</data>
+							</datas>
+						</asset>
+						
+						<asset>
+							<id>sprite_wall#SPRITE_WALL#</id>
+							<export>sprite_wall#SPRITE_WALL#</export>
+							<datas>
+								<data>
+									<id>spClass</id>
+									<value>net.cyclo.mysprite.MySpWall</value>
+								</data>
+							</datas>
+						</asset>
+						
+						<asset>
+							<id>sprite_decor_front#SPRITE_DECOR_FRONT#</id>
+							<export>sprite_decor_front#SPRITE_DECOR_FRONT#</export>
+							<datas>
+								<data>
+									<id>spClass</id>
+									<value>net.cyclo.mysprite.MySpDecorFront</value>
+								</data>
+							</datas>
+						</asset>-->
+					</assets>
+				</group>
+				
+				<group>
+					<id>sprite_bmp</id>
+					
+					<bitmap smooth="true" snap="never"/>
+					<unlock_instance/>
+					
+					<assets>
+						<asset>
+							<id>sprite_bmp#SPRITE_BMP#</id>
+							<export>sprite_bmp#SPRITE_BMP#</export>
+						</asset>
+					</assets>
+				</group>
+				
+				<group>
+					<id>hud</id>
+					
+					<instance>0</instance>
+					
+					<assets>
+						<asset>
+							<id>nav_hud</id>
+							<export>nav_hud</export>
+							<vecto parse_mode="in-depth" ignoreParseBmp="true" />
+						</asset>
+						
+						<asset>
+							<id>nav_home_bg_bmp</id>
+							<export>nav_home_bg_bmp</export>
+						</asset>
+						
+						<asset>
+							<id>nav_home_up_bmp</id>
+							<export>nav_home_up_bmp</export>
+						</asset>
+						
+						<asset>
+							<id>nav_home_over_bmp</id>
+							<export>nav_home_over_bmp</export>
+						</asset>
+						
+						<asset>
+							<id>nav_help_bg_bmp</id>
+							<export>nav_help_bg_bmp</export>
+						</asset>
+						
+						<asset>
+							<id>nav_help_up_bmp</id>
+							<export>nav_help_up_bmp</export>
+						</asset>
+						
+						<asset>
+							<id>nav_help_over_bmp</id>
+							<export>nav_help_over_bmp</export>
+						</asset>
+						
+						<asset>
+							<id>nav_close_bg_bmp</id>
+							<export>nav_close_bg_bmp</export>
+						</asset>
+						
+						<asset>
+							<id>nav_close_up_bmp</id>
+							<export>nav_close_up_bmp</export>
+						</asset>
+						
+						<asset>
+							<id>nav_close_over_bmp</id>
+							<export>nav_close_over_bmp</export>
+						</asset>
+						
+						<asset>
+							<id>screen_popQuit</id>
+							<export>screen_popQuit</export>
+							<vecto parse_mode="in-depth" ignoreParseBmp="true" />
+						</asset>
+						
+						<asset>
+							<id>screen_popHelp</id>
+							<export>screen_popHelp</export>
+							<vecto parse_mode="in-depth" ignoreParseBmp="true" />
+						</asset>
+						
+						<asset>
+							<id>screen_pop_rotContent_bg_bmp</id>
+							<export>screen_pop_rotContent_bg_bmp</export>
+						</asset>
+						
+						<asset>
+							<id>nav_replay_up_bmp</id>
+							<export>nav_replay_up_bmp</export>
+						</asset>
+						
+						<asset>
+							<id>nav_replay_bg_bmp</id>
+							<export>nav_replay_bg_bmp</export>
+						</asset>
+						
+						<asset>
+							<id>nav_replay_over_bmp</id>
+							<export>nav_replay_over_bmp</export>
+						</asset>
+						
+						<asset>
+							<id>screen_popGameover</id>
+							<export>screen_popGameover</export>
+							<vecto parse_mode="in-depth" ignoreParseBmp="true" />
+						</asset>
+						
+						<asset>
+							<id>screen_popGameover_rotContent_bg</id>
+							<export>screen_popGameover_rotContent_bg</export>
+						</asset>
+						
+						<asset>
+							<id>screen_popGameover_btNext_up_bmp</id>
+							<export>screen_popGameover_btNext_up_bmp</export>
+						</asset>
+						
+						<asset>
+							<id>screen_popGameover_btReplay_up_bmp</id>
+							<export>screen_popGameover_btReplay_up_bmp</export>
+						</asset>
+						
+						<asset>
+							<id>screen_popGameover_btReplay_over_bmp</id>
+							<export>screen_popGameover_btReplay_over_bmp</export>
+						</asset>
+						
+						<asset>
+							<id>screen_popGameover_btReplay_bg_bmp</id>
+							<export>screen_popGameover_btReplay_bg_bmp</export>
+						</asset>
+					</assets>
+				</group>
+			</groups>
+		</group>
+	</groups>
+</xml>

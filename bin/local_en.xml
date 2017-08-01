@@ -1,0 +1,20 @@
+<xml>
+	<local id="screen_loading_title"><![CDATA[<font color="#00ffff">L</font>oading]]></local>
+	<local id="screen_title_title"><![CDATA[<font color="#ff0088">T</font>itle<br><font color="#ff0088">S</font>creen]]></local>
+	<local id="screen_title_start"><![CDATA[&lt; start &gt;]]></local>
+	<local id="select_level0"><![CDATA[level <font color="#00ffff">0</font>]]></local>
+	<local id="select_level1"><![CDATA[level <font color="#00ffff">1</font>]]></local>
+	<local id="select_level2"><![CDATA[level <font color="#00ffff">2</font>]]></local>
+	<local id="select_level3"><![CDATA[level <font color="#00ffff">3</font>]]></local>
+	<local id="select_level4"><![CDATA[level <font color="#00ffff">4</font>]]></local>
+	<local id="select_title"><![CDATA[<font color="#ff0088">Select</font> a level ...]]></local>
+	<local id="screen_tc_content"><![CDATA[Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat]]></local>
+	<local id="screen_tc_play"><![CDATA[<font color="#00ffff">P</font>lay &gt;&gt;]]></local>
+	<local id="screen_popQuit_content"><![CDATA[Quit ?]]></local>
+	<local id="screen_popQuit_yes"><![CDATA[&lt; <font color="#00ffff">y</font>es &gt;]]></local>
+	<local id="screen_popQuit_no"><![CDATA[&lt; <font color="#00ffff">n</font>o &gt;]]></local>
+	<local id="screen_popHelp_title"><![CDATA[<font color="#ff0088">H</font>elp]]></local>
+	<local id="screen_popHelp_content"><![CDATA[Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat]]></local>
+	<local id="screen_popGameover_next"><![CDATA[<font color="#00ffff">N</font>ext &gt;&gt;]]></local>
+	<local id="screen_popGameover_title"><![CDATA[<font color="#ff0088">G</font>ame <font color="#ff0088">O</font>ver]]></local>
+</xml>
