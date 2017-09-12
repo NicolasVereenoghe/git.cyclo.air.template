@@ -3,7 +3,8 @@
 :: Path to Flex SDK
 ::set FLEX_SDK=C:\Program Files (x86)\FlashDevelop\Tools\flexsdk17.0.0.124
 ::set FLEX_SDK=C:\Program Files (x86)\FlashDevelop\Tools\flex_air23
-set FLEX_SDK=C:\Program Files (x86)\FlashDevelop\Tools\flexsdk_air24.0.0.180
+::set FLEX_SDK=C:\Program Files (x86)\FlashDevelop\Tools\flexsdk_air24.0.0.180
+set FLEX_SDK=C:\Program Files (x86)\FlashDevelop\Tools\flexsdk_air27.0.0.116
 set AUTO_INSTALL_IOS=yes
 
 :: Path to Android SDK

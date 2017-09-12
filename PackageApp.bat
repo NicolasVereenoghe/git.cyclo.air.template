@@ -1,5 +1,12 @@
 @echo off
 set PAUSE_ERRORS=1
+
+::android java compiler options
+set _JAVA_OPTIONS=-Xmx512M
+
+::android no .air affix command
+set AIR_NOANDROIDFLAIR=true
+
 call bat\SetupSDK.bat
 call bat\SetupApplication.bat
 

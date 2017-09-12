@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<application xmlns="http://ns.adobe.com/air/application/24.0">
+<application xmlns="http://ns.adobe.com/air/application/27.0">
   <id>com.vega.testbalisto</id>
   <versionNumber>1.0</versionNumber>
   <supportedProfiles>mobileDevice</supportedProfiles>
@@ -80,6 +80,7 @@
 	<image120x120>icons/icon120.png</image120x120>
     <image144x144>icons/icon144.png</image144x144>
 	<image152x152>icons/icon152.png</image152x152>
+	<image167x167>icons/icon167.png</image167x167>
 	<image180x180>icons/icon180.png</image180x180>
     <image512x512>icons/icon512.png</image512x512>
 	<image1024x1024>icons/icon1024.png</image1024x1024>
